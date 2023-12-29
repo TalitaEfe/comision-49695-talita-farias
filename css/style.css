@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@100;300;400;700&display=swap');
+
+/*font-family: 'Indie Flower', cursive;
+font-family: 'Roboto', sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #B38D97;
+}
+
+header{
+    background-color: #b6afa452;
+}
+
+header div ul li{
+    list-style: none;
+}
+
+header div{
+    text-decoration: none;
+    color: #424B54;
+    font-size: .75rem;
+    font-family: Roboto;
+    font-weight: 100;
+    word-wrap: break-word;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.navbar{
+    display: flex;
+    list-style: none;
+    gap: 1.25rem;
+    justify-content: end;
+    padding: .625rem;
+    flex-wrap: wrap;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: #424B54;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 700;
+}
+.encabezado{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    top: 0;
+    
+}
+
+.encabezado img{
+    max-width: 100%;
+    height: auto;
+}
+h1{
+    color: white;
+    font-size: 62px;
+    font-family: Roboto;
+    font-weight: 400;
+    text-align: center;
+    margin: 0rem 12.5rem 0 12.5rem;
+    flex-wrap: wrap;
+}
+
+
+.titulo{
+    color: #424B54;
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 20px;
+
+}
+
+#sub{
+    color: #424B54;
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.portfolio{
+    color: #424B54;
+    display: grid;
+}
+
+.portfolio h3{
+    background-color: #EBCFB2;
+    color: #424B54;
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    margin: 30px 30px 0px 30px;
+}
+.portfolio p{
+    background-color: #EBCFB2;
+    color: #424B54;
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 0px 30px 30px 30px;
+}
+.portfolio a{
+    display: flex;
+    justify-content: center;
+}
+
+.sobreMi{
+    background-color: #EBCFB2;
+    color: #B38D97;
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: 800;
+    display: flex;
+    width: 100%;
+    height: 652px;
+    flex-direction: row;
+}
+.sobreMi h2{
+    width: 318px;
+    display: flex;
+    justify-items: left;
+    color: #B38D97;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 50.675px;
+}
+#mi{
+    width: 353px;
+    height: 156px;
+    display: flex;
+    color: #424B54;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.918px;
+    padding: 20px;
+    margin: 10px;
+    justify-content: left;
+}
+
+.sobreMi article{
+    display: flex;
+    padding: 20px;
+    width: 555px;
+    height: 549px;
+}
+.boton{
+    background-color: #B38D97;
+    color: #424B54;
+    font-size: 13px;
+    font-family: Roboto;
+    padding: .625rem .625rem .625rem .625rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.proy{
+    color: #424B54;
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    padding: 20px;
+}
+#artUno{
+    display: flex;
+    justify-content: right;
+    padding: 20px;
+}
+footer section{
+    background-color: #C5BAAF;
+    width: 100%; 
+    height: 100%;
+    color: white;
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 50.67px;
+    word-wrap: break-word;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer div a{
+    justify-content: end;
+    width: 5%;
+}
+
+.lienzoPeanas{
+    background-color: #B38D97;
+    color: #424B54;
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+.digital{
+    background-color: #EBCFB2;
+    color: #424B54;
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: 400;
+}
+.web{
+    background-color: #B38D97;
+    color: #424B54;
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+.hola{
+    background-color: #B38D97;
+    width: 100%;
+}
+
+.holaUno{
+    background-color: #EBCFB2;
+    color: #B38D97;
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: 400;
+    margin: 50px 0px 50px 0px;
+}
+.holaDos{
+    background-color: #EBCFB2;
+    color: #B38D97;
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: 400;
+    margin: 50px 0px 50px 0px;
+}
+.proyect{
+    background-image: url(https://images.unsplash.com/photo-1556139943-4bdca53adf1e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    color: #424B54;
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+.contacto{
+    background-color: #424B54;
+    color: white;
+    font-size: 20px;
+    font-family: Roboto;
+    margin: 12.5rem 12.5rem;
+}
+#parrafoUno {
+    background-color:#EBCFB2;
+    color: #424B54;
+    font-size: 1.875rem;
+    font-family: Roboto;
+    padding: 1.875rem 1.875rem;
+    margin-left: 12.5rem;
+    margin-right: 12.5rem;
+    margin-top: 12.5rem;
+    text-align: center;
+}
+#parUno{
+    background-color:#EBCFB2;
+    color: #424B54;
+    font-size: 1.25rem;
+    font-family: Roboto;
+    padding: 1.875rem 1.875rem;
+    margin-left: 12.5rem;
+    margin-right: 12.5rem;
+    text-align: center;
+}
+#parrafoDos{
+    background-color:#EBCFB2;
+    color: #424B54;
+    font-size: 1.25rem;
+    font-family: Roboto;
+    padding: 1.875rem 1.875rem;
+    margin: 12.5rem 12.5rem 12.5rem 12.5rem;
+    text-align: center;
+}
