@@ -5,32 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto final Talita Farias</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
     <header>
-        <div>
+        <!-- <div>
             <p>Canelones, Uruguay</p>
             <ul>
                 <li>Sitio en español</li>
                 <li>2023</li>
             </ul>
-        </div>
-        <nav>
+        </div> -->
+        <div class="container-fluid fixed-top">
             <a href="../index.html" class="logo"><img src="../assets/img/logo.png" alt="logo de la marca"></a>
-            <ul class="navbar">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./portfolio.html">Portfolio</a></li>
-                <li><a href="./sobremi.html">Sobre mi</a></li>
-                <li><a href="./proyectos.html">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-        <img class="encabezado" src="../assets/img/encabezado.png" alt="encabezado de la página">
+            <nav class="container">
+                <ul class="navbar row">
+                    <li class="col-sm-2 col-mb-2 col-lg-0"><a href="../index.html">Inicio</a></li>
+                    <li class="col-sm-2 col-mb-2 col-lg-0"><a href="./portfolio.html">Portfolio</a></li>
+                    <li class="col-sm-2 col-mb-2 col-lg-0"><a href="./sobremi.html">Sobre mi</a></li>
+                    <li class="col-sm-2 col-mb-2 col-lg-0"><a href="./proyectos.html">Proyectos</a></li>
+                    <li class="col-sm-2 col-mb-2 col-lg-0"><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <img class="encabezado" src="../assets/img/encabezado.png" class="img-fluid" alt="encabezado de la página">
         <h1>Arte para traer una sonrisa a tu rostro y felicidad a tu corazón</h1>
     </header>
-    <main>
+    <main class="container-fluid">
         <h2 id="parrafoUno">¡Conéctate con Talita!</h2>
         <p id="parUno">¡Gracias por visitar la página! Estoy emocionada de saber que te interesa mi trabajo. Si tienes
             preguntas, comentarios o simplemente quieres saludar, ¡me encantaría escucharte!</p>
@@ -38,11 +40,11 @@
             <form action="">
                 <!-- <fieldset></fieldset> contorno para el form -->
                 <h3>Datos de contacto</h3>
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email">
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre">
-                <label for="producto">Producto</label>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" autocomplete="on">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" autocomplete="on">
+                <label for="producto">Producto:</label>
                 <select name="producto" id="producto">
                     <option disabled selected>Seleccionar...</option>
                     <option value="Acrilicos">Acrilicos</option>
@@ -50,8 +52,8 @@
                     <option value="Sitiso Web">Sitios Web</option>
                     <option value="Bolsos">Bolsos</option>
                 </select>
-                <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="" cols="30" rows="10"></textarea> <!-- cuadrado para comentarios -->
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea> <!-- cuadrado para comentarios -->
                 <input type="submit" value="Enviar" />
                 <input type="reset" value="Limpiar campos" />
             </form>
@@ -62,8 +64,7 @@
 
             ¡Gracias por estar aquí!</p>
     </main>
-
-    <footer>
+    <footer class="container-fluid">
         <section>
             <div>
                 <p>Created by Talita Farias</p>
@@ -84,6 +85,7 @@
             </div>
         </section>
     </footer>
+        <script src="../bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

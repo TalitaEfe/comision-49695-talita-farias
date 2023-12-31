@@ -12,8 +12,6 @@ font-family: 'Roboto', sans-serif;*/
 body{
     display: grid;
     background-color: #B38D97;
-    width: 100%;
-    
 }
 
 header{
@@ -25,6 +23,7 @@ header div ul li{
 }
 
 header div{
+    background-color: #b38d979c;
     text-decoration: none;
     color: #424B54;
     font-size: .75rem;
@@ -40,8 +39,9 @@ header div{
     list-style: none;
     gap: 1.25rem;
     justify-content: end;
-    padding: 0.625rem;
     flex-wrap: wrap;
+    margin-top: 40px;
+    padding: 40px;
 }
 
 .navbar li a{
@@ -51,6 +51,12 @@ header div{
     font-family: Roboto;
     font-weight: 700;
 }
+
+.navbar li :hover{
+    text-decoration: underline;
+    color: #C5BAAF;
+}
+
 .encabezado{
     display: flex;
     width: 100%;
@@ -79,6 +85,9 @@ h1{
     margin: 0rem 12.5rem 0 12.5rem;
     flex-wrap: wrap;
 }
+main{
+    flex-wrap: wrap;
+}
 
 .titulo{
     color: #424B54;
@@ -89,9 +98,9 @@ h1{
     flex-direction: column;
     justify-items: center;
     padding: 20px;
-
+    flex-wrap: wrap;
+    min-width: 250px;
 }
-
 #sub{
     color: #424B54;
     font-size: 30px;
@@ -100,12 +109,16 @@ h1{
     display: flex;
     justify-content: center;
     padding: 20px;
+    flex-wrap: wrap;
+    min-width: 250px;
 }
 .portfolio{
     color: #424B54;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 55% 45%;
+    flex-wrap: wrap;
+    min-width: 250px;
 }
 
 .portfolio h3{
@@ -117,7 +130,10 @@ h1{
     margin: 30px 30px 0px 30px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    min-width: 250px;
 }
+
 .portfolio p{
     background-color: #EBCFB2;
     color: #424B54;
@@ -128,11 +144,18 @@ h1{
     margin: 0px 30px 30px 30px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    min-width: 250px;
 }
 
 .portfolio a{
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 32px;
+    justify-items: center;
+    flex-wrap: wrap;
+    min-width: 250px;
 }
 
 .sobreMi{
@@ -143,6 +166,7 @@ h1{
     font-weight: 800;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    min-width: 250px;
 }
 .sobreMi a img{
     display: grid;
@@ -196,6 +220,10 @@ h1{
     text-decoration: none;
 }
 
+.boton:hover{
+    background-color: #B38D97;
+}
+
 .proy{
     width: 620px;
     display: flex;
@@ -204,6 +232,7 @@ h1{
     padding: 20px 23px 17px;
     background-color: #b38d97;
     position: relative;
+    min-width: 250px;
 }
 
 .item1{
@@ -343,6 +372,7 @@ footer section{
     word-wrap: break-word;
     display: flex;
     justify-content: space-evenly;
+    min-width: 250px;
 }
 
 footer div a{
@@ -403,15 +433,30 @@ footer div a{
 
 .web{
     background-color: #B38D97;
+    width: 100%;
+    height: auto;
     color: #424B54;
     font-size: 30px;
     font-family: Roboto;
     font-weight: 400;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px;
+}
+.web a{
+    width: 100%;
     padding: 20px;
 }
 
+.web a img{
+    max-width: 100%;
+}
+
+@media screen and (min-width: 425px) {
+    .web a img{
+        max-width: 100%;
+        margin: auto;
+    }
+}
 .hola{
     background-color: #B38D97;
     width: 100%;
@@ -439,8 +484,15 @@ footer div a{
     font-size: 30px;
     font-family: Roboto;
     font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 250px;
 }
-
+.proyect a img{
+    margin: 20px;
+    padding: 20px;
+}
 .contacto{
     background-color: #424B54;
     color: white;
@@ -448,6 +500,17 @@ footer div a{
     font-family: Roboto;
     margin: 12.5rem 12.5rem;
 }
+
+input:focus{
+    background-color: #d5aca9;
+    color: #424B54;
+}
+
+textarea:focus{
+    background-color: #d5aca9;
+    color: #424B54;
+}
+
 #parrafoUno {
     background-color:#EBCFB2;
     color: #424B54;
